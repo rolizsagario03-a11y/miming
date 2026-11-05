@@ -118,8 +118,8 @@ nav ul a:hover::after{width:100%}
 footer{text-align:center;padding:36px 24px calc(36px + env(safe-area-inset-bottom,0px));font-size:.88rem;border-top:1px solid var(--blush)}
 footer a{color:var(--red);font-weight:600}
 
-.reveal{opacity:0;transform:translateY(26px);transition:opacity .9s ease,transform .9s ease}
-.reveal.in{opacity:1;transform:none}
+.js .reveal{opacity:0;transform:translateY(26px);transition:opacity .9s ease,transform .9s ease}
+.js .reveal.in{opacity:1;transform:none}
 
 @media (max-width:900px){
   .hero,.about{grid-template-columns:1fr;gap:50px}
@@ -140,7 +140,7 @@ footer a{color:var(--red);font-weight:600}
   .contact{padding:50px 22px;border-radius:30px}
   .timeline{padding-left:36px}.t-item{padding:22px}.t-item::before{left:-33px}
 }
-@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.js .reveal{opacity:1;transform:none}}
 
 /* photos */
 .arch img,.collage img,.proj .img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
